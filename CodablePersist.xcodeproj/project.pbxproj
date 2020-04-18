@@ -7,22 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D9C42A222745900000A6585 /* CodablePersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* CodablePersist.swift */; };
-		3D9C42B1227459C1000A6585 /* CodablePersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* CodablePersist.swift */; };
-		3D9C42BF227459F6000A6585 /* CodablePersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* CodablePersist.swift */; };
-		3D9C42CD22745A28000A6585 /* CodablePersist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42A122745900000A6585 /* CodablePersist.swift */; };
 		3D9C42F62274604A000A6585 /* CodablePersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodablePersist.framework */; };
-		3D9C42FC22746078000A6585 /* CodablePersistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* CodablePersistTests.swift */; };
 		3D9C43062274611B000A6585 /* CodablePersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42A92274599D000A6585 /* CodablePersist.framework */; };
-		3D9C430C22746131000A6585 /* CodablePersistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* CodablePersistTests.swift */; };
 		3D9C431622746198000A6585 /* CodablePersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C42C522745A07000A6585 /* CodablePersist.framework */; };
-		3D9C431C227461AF000A6585 /* CodablePersistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C42D722745CDE000A6585 /* CodablePersistTests.swift */; };
 		3D9C43242274629B000A6585 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43232274629B000A6585 /* AppDelegate.swift */; };
 		3D9C43262274629B000A6585 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9C43252274629B000A6585 /* ViewController.swift */; };
 		3D9C432B2274629C000A6585 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432A2274629C000A6585 /* Assets.xcassets */; };
 		3D9C432E2274629C000A6585 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9C432C2274629C000A6585 /* LaunchScreen.storyboard */; };
 		3D9C433422746323000A6585 /* CodablePersist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodablePersist.framework */; };
 		3D9C433522746323000A6585 /* CodablePersist.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9C429022745894000A6585 /* CodablePersist.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41474F9B244BAC5600C3D066 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8E244BAC5600C3D066 /* MemoryStorage.swift */; };
+		41474F9C244BAC5600C3D066 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8E244BAC5600C3D066 /* MemoryStorage.swift */; };
+		41474F9D244BAC5600C3D066 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8E244BAC5600C3D066 /* MemoryStorage.swift */; };
+		41474F9E244BAC5600C3D066 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8E244BAC5600C3D066 /* MemoryStorage.swift */; };
+		41474F9F244BAC5600C3D066 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8F244BAC5600C3D066 /* DiskStorage.swift */; };
+		41474FA0244BAC5600C3D066 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8F244BAC5600C3D066 /* DiskStorage.swift */; };
+		41474FA1244BAC5600C3D066 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8F244BAC5600C3D066 /* DiskStorage.swift */; };
+		41474FA2244BAC5600C3D066 /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F8F244BAC5600C3D066 /* DiskStorage.swift */; };
+		41474FA3244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F90244BAC5600C3D066 /* UserDefaultsStorage.swift */; };
+		41474FA4244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F90244BAC5600C3D066 /* UserDefaultsStorage.swift */; };
+		41474FA5244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F90244BAC5600C3D066 /* UserDefaultsStorage.swift */; };
+		41474FA6244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F90244BAC5600C3D066 /* UserDefaultsStorage.swift */; };
+		41474FA7244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F92244BAC5600C3D066 /* ObjectDescriptor.swift */; };
+		41474FA8244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F92244BAC5600C3D066 /* ObjectDescriptor.swift */; };
+		41474FA9244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F92244BAC5600C3D066 /* ObjectDescriptor.swift */; };
+		41474FAA244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F92244BAC5600C3D066 /* ObjectDescriptor.swift */; };
+		41474FAB244BAC5600C3D066 /* StorageRemovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F93244BAC5600C3D066 /* StorageRemovable.swift */; };
+		41474FAC244BAC5600C3D066 /* StorageRemovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F93244BAC5600C3D066 /* StorageRemovable.swift */; };
+		41474FAD244BAC5600C3D066 /* StorageRemovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F93244BAC5600C3D066 /* StorageRemovable.swift */; };
+		41474FAE244BAC5600C3D066 /* StorageRemovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F93244BAC5600C3D066 /* StorageRemovable.swift */; };
+		41474FAF244BAC5600C3D066 /* StorageWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F94244BAC5600C3D066 /* StorageWritable.swift */; };
+		41474FB0244BAC5600C3D066 /* StorageWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F94244BAC5600C3D066 /* StorageWritable.swift */; };
+		41474FB1244BAC5600C3D066 /* StorageWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F94244BAC5600C3D066 /* StorageWritable.swift */; };
+		41474FB2244BAC5600C3D066 /* StorageWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F94244BAC5600C3D066 /* StorageWritable.swift */; };
+		41474FB3244BAC5600C3D066 /* CacheStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F95244BAC5600C3D066 /* CacheStorable.swift */; };
+		41474FB4244BAC5600C3D066 /* CacheStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F95244BAC5600C3D066 /* CacheStorable.swift */; };
+		41474FB5244BAC5600C3D066 /* CacheStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F95244BAC5600C3D066 /* CacheStorable.swift */; };
+		41474FB6244BAC5600C3D066 /* CacheStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F95244BAC5600C3D066 /* CacheStorable.swift */; };
+		41474FB7244BAC5600C3D066 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F96244BAC5600C3D066 /* Identifiable.swift */; };
+		41474FB8244BAC5600C3D066 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F96244BAC5600C3D066 /* Identifiable.swift */; };
+		41474FB9244BAC5600C3D066 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F96244BAC5600C3D066 /* Identifiable.swift */; };
+		41474FBA244BAC5600C3D066 /* Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F96244BAC5600C3D066 /* Identifiable.swift */; };
+		41474FBB244BAC5600C3D066 /* StorageReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F97244BAC5600C3D066 /* StorageReadable.swift */; };
+		41474FBC244BAC5600C3D066 /* StorageReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F97244BAC5600C3D066 /* StorageReadable.swift */; };
+		41474FBD244BAC5600C3D066 /* StorageReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F97244BAC5600C3D066 /* StorageReadable.swift */; };
+		41474FBE244BAC5600C3D066 /* StorageReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F97244BAC5600C3D066 /* StorageReadable.swift */; };
+		41474FBF244BAC5600C3D066 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F99244BAC5600C3D066 /* StorageError.swift */; };
+		41474FC0244BAC5600C3D066 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F99244BAC5600C3D066 /* StorageError.swift */; };
+		41474FC1244BAC5600C3D066 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F99244BAC5600C3D066 /* StorageError.swift */; };
+		41474FC2244BAC5600C3D066 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F99244BAC5600C3D066 /* StorageError.swift */; };
+		41474FC3244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F9A244BAC5600C3D066 /* SorageDateDescriptor.swift */; };
+		41474FC4244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F9A244BAC5600C3D066 /* SorageDateDescriptor.swift */; };
+		41474FC5244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F9A244BAC5600C3D066 /* SorageDateDescriptor.swift */; };
+		41474FC6244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474F9A244BAC5600C3D066 /* SorageDateDescriptor.swift */; };
+		41474FCC244BAC7300C3D066 /* DiskStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC7244BAC7300C3D066 /* DiskStorageTest.swift */; };
+		41474FCD244BAC7300C3D066 /* DiskStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC7244BAC7300C3D066 /* DiskStorageTest.swift */; };
+		41474FCE244BAC7300C3D066 /* DiskStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC7244BAC7300C3D066 /* DiskStorageTest.swift */; };
+		41474FCF244BAC7300C3D066 /* MemoryStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */; };
+		41474FD0244BAC7300C3D066 /* MemoryStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */; };
+		41474FD1244BAC7300C3D066 /* MemoryStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */; };
+		41474FD2244BAC7300C3D066 /* UserDefaultsStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */; };
+		41474FD3244BAC7300C3D066 /* UserDefaultsStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */; };
+		41474FD4244BAC7300C3D066 /* UserDefaultsStorageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */; };
+		41474FD5244BAC7300C3D066 /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FCB244BAC7300C3D066 /* PostMock.swift */; };
+		41474FD6244BAC7300C3D066 /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FCB244BAC7300C3D066 /* PostMock.swift */; };
+		41474FD7244BAC7300C3D066 /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FCB244BAC7300C3D066 /* PostMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +123,6 @@
 		3D9C429022745894000A6585 /* CodablePersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodablePersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C429C227458E8000A6585 /* CodablePersist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CodablePersist.plist; sourceTree = "<group>"; };
 		3D9C429D227458E8000A6585 /* CodablePersistTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CodablePersistTests.plist; sourceTree = "<group>"; };
-		3D9C42A122745900000A6585 /* CodablePersist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePersist.swift; sourceTree = "<group>"; };
 		3D9C42A92274599D000A6585 /* CodablePersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodablePersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42B7227459D6000A6585 /* CodablePersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodablePersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C42C522745A07000A6585 /* CodablePersist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodablePersist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,11 +131,9 @@
 		3D9C42D422745B48000A6585 /* CodablePersist.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CodablePersist.podspec; sourceTree = SOURCE_ROOT; };
 		3D9C42D522745B48000A6585 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		3D9C42D622745C9D000A6585 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = SOURCE_ROOT; };
-		3D9C42D722745CDE000A6585 /* CodablePersistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePersistTests.swift; sourceTree = "<group>"; };
 		3D9C42D822745DAF000A6585 /* .jazzy.yaml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yaml; sourceTree = SOURCE_ROOT; };
 		3D9C42D922745DAF000A6585 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		3D9C42DB22745DB0000A6585 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
-		3D9C42EC22745FDA000A6585 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		3D9C42F12274604A000A6585 /* CodablePersist-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodablePersist-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C43012274611B000A6585 /* CodablePersist-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodablePersist-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9C431122746198000A6585 /* CodablePersist-macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CodablePersist-macOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +144,21 @@
 		3D9C432D2274629C000A6585 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9C432F2274629C000A6585 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF6F6282315616D00706C4E /* main.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.yml; path = .github/workflows/main.yml; sourceTree = SOURCE_ROOT; };
+		41474F8E244BAC5600C3D066 /* MemoryStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryStorage.swift; sourceTree = "<group>"; };
+		41474F8F244BAC5600C3D066 /* DiskStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStorage.swift; sourceTree = "<group>"; };
+		41474F90244BAC5600C3D066 /* UserDefaultsStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorage.swift; sourceTree = "<group>"; };
+		41474F92244BAC5600C3D066 /* ObjectDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjectDescriptor.swift; sourceTree = "<group>"; };
+		41474F93244BAC5600C3D066 /* StorageRemovable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageRemovable.swift; sourceTree = "<group>"; };
+		41474F94244BAC5600C3D066 /* StorageWritable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageWritable.swift; sourceTree = "<group>"; };
+		41474F95244BAC5600C3D066 /* CacheStorable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheStorable.swift; sourceTree = "<group>"; };
+		41474F96244BAC5600C3D066 /* Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiable.swift; sourceTree = "<group>"; };
+		41474F97244BAC5600C3D066 /* StorageReadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageReadable.swift; sourceTree = "<group>"; };
+		41474F99244BAC5600C3D066 /* StorageError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageError.swift; sourceTree = "<group>"; };
+		41474F9A244BAC5600C3D066 /* SorageDateDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SorageDateDescriptor.swift; sourceTree = "<group>"; };
+		41474FC7244BAC7300C3D066 /* DiskStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiskStorageTest.swift; sourceTree = "<group>"; };
+		41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryStorageTest.swift; sourceTree = "<group>"; };
+		41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageTest.swift; sourceTree = "<group>"; };
+		41474FCB244BAC7300C3D066 /* PostMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,9 +264,6 @@
 				3D9C42DB22745DB0000A6585 /* .gitignore */,
 				3D9C42D822745DAF000A6585 /* .jazzy.yaml */,
 				3D9C42D922745DAF000A6585 /* .swiftlint.yml */,
-				3DB91AC4229AC263002668DA,
-				3DB91AC5229AC26C002668DA,
-				3DB91AC6229AC272002668DA,
 				3DF6F6282315616D00706C4E /* main.yml */,
 			);
 			path = Configs;
@@ -214,7 +272,9 @@
 		3D9C42A0227458FA000A6585 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C42A122745900000A6585 /* CodablePersist.swift */,
+				41474F91244BAC5600C3D066 /* Core */,
+				41474F98244BAC5600C3D066 /* Helpers */,
+				41474F8D244BAC5600C3D066 /* Storage */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -222,8 +282,10 @@
 		3D9C42A32274595F000A6585 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				3D9C42EC22745FDA000A6585 /* LinuxMain.swift */,
-				3D9C42D722745CDE000A6585 /* CodablePersistTests.swift */,
+				41474FC7244BAC7300C3D066 /* DiskStorageTest.swift */,
+				41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */,
+				41474FCA244BAC7300C3D066 /* Mock */,
+				41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -246,6 +308,46 @@
 				3D9C432F2274629C000A6585 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		41474F8D244BAC5600C3D066 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				41474F8E244BAC5600C3D066 /* MemoryStorage.swift */,
+				41474F8F244BAC5600C3D066 /* DiskStorage.swift */,
+				41474F90244BAC5600C3D066 /* UserDefaultsStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		41474F91244BAC5600C3D066 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				41474F92244BAC5600C3D066 /* ObjectDescriptor.swift */,
+				41474F93244BAC5600C3D066 /* StorageRemovable.swift */,
+				41474F94244BAC5600C3D066 /* StorageWritable.swift */,
+				41474F95244BAC5600C3D066 /* CacheStorable.swift */,
+				41474F96244BAC5600C3D066 /* Identifiable.swift */,
+				41474F97244BAC5600C3D066 /* StorageReadable.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		41474F98244BAC5600C3D066 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				41474F99244BAC5600C3D066 /* StorageError.swift */,
+				41474F9A244BAC5600C3D066 /* SorageDateDescriptor.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		41474FCA244BAC7300C3D066 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				41474FCB244BAC7300C3D066 /* PostMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -456,12 +558,15 @@
 					};
 					3D9C42F02274604A000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1140;
 					};
 					3D9C43002274611B000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1140;
 					};
 					3D9C431022746198000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1140;
 					};
 					3D9C43202274629B000A6585 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -634,7 +739,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42A222745900000A6585 /* CodablePersist.swift in Sources */,
+				41474FBF244BAC5600C3D066 /* StorageError.swift in Sources */,
+				41474F9F244BAC5600C3D066 /* DiskStorage.swift in Sources */,
+				41474FA3244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */,
+				41474FC3244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */,
+				41474FAB244BAC5600C3D066 /* StorageRemovable.swift in Sources */,
+				41474FB3244BAC5600C3D066 /* CacheStorable.swift in Sources */,
+				41474FAF244BAC5600C3D066 /* StorageWritable.swift in Sources */,
+				41474FB7244BAC5600C3D066 /* Identifiable.swift in Sources */,
+				41474F9B244BAC5600C3D066 /* MemoryStorage.swift in Sources */,
+				41474FBB244BAC5600C3D066 /* StorageReadable.swift in Sources */,
+				41474FA7244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +757,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42B1227459C1000A6585 /* CodablePersist.swift in Sources */,
+				41474FC0244BAC5600C3D066 /* StorageError.swift in Sources */,
+				41474FA0244BAC5600C3D066 /* DiskStorage.swift in Sources */,
+				41474FA4244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */,
+				41474FC4244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */,
+				41474FAC244BAC5600C3D066 /* StorageRemovable.swift in Sources */,
+				41474FB4244BAC5600C3D066 /* CacheStorable.swift in Sources */,
+				41474FB0244BAC5600C3D066 /* StorageWritable.swift in Sources */,
+				41474FB8244BAC5600C3D066 /* Identifiable.swift in Sources */,
+				41474F9C244BAC5600C3D066 /* MemoryStorage.swift in Sources */,
+				41474FBC244BAC5600C3D066 /* StorageReadable.swift in Sources */,
+				41474FA8244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,7 +775,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42BF227459F6000A6585 /* CodablePersist.swift in Sources */,
+				41474FC1244BAC5600C3D066 /* StorageError.swift in Sources */,
+				41474FA1244BAC5600C3D066 /* DiskStorage.swift in Sources */,
+				41474FA5244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */,
+				41474FC5244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */,
+				41474FAD244BAC5600C3D066 /* StorageRemovable.swift in Sources */,
+				41474FB5244BAC5600C3D066 /* CacheStorable.swift in Sources */,
+				41474FB1244BAC5600C3D066 /* StorageWritable.swift in Sources */,
+				41474FB9244BAC5600C3D066 /* Identifiable.swift in Sources */,
+				41474F9D244BAC5600C3D066 /* MemoryStorage.swift in Sources */,
+				41474FBD244BAC5600C3D066 /* StorageReadable.swift in Sources */,
+				41474FA9244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,7 +793,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42CD22745A28000A6585 /* CodablePersist.swift in Sources */,
+				41474FC2244BAC5600C3D066 /* StorageError.swift in Sources */,
+				41474FA2244BAC5600C3D066 /* DiskStorage.swift in Sources */,
+				41474FA6244BAC5600C3D066 /* UserDefaultsStorage.swift in Sources */,
+				41474FC6244BAC5600C3D066 /* SorageDateDescriptor.swift in Sources */,
+				41474FAE244BAC5600C3D066 /* StorageRemovable.swift in Sources */,
+				41474FB6244BAC5600C3D066 /* CacheStorable.swift in Sources */,
+				41474FB2244BAC5600C3D066 /* StorageWritable.swift in Sources */,
+				41474FBA244BAC5600C3D066 /* Identifiable.swift in Sources */,
+				41474F9E244BAC5600C3D066 /* MemoryStorage.swift in Sources */,
+				41474FBE244BAC5600C3D066 /* StorageReadable.swift in Sources */,
+				41474FAA244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,7 +811,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C42FC22746078000A6585 /* CodablePersistTests.swift in Sources */,
+				41474FD2244BAC7300C3D066 /* UserDefaultsStorageTest.swift in Sources */,
+				41474FD5244BAC7300C3D066 /* PostMock.swift in Sources */,
+				41474FCF244BAC7300C3D066 /* MemoryStorageTest.swift in Sources */,
+				41474FCC244BAC7300C3D066 /* DiskStorageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,7 +822,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C430C22746131000A6585 /* CodablePersistTests.swift in Sources */,
+				41474FD3244BAC7300C3D066 /* UserDefaultsStorageTest.swift in Sources */,
+				41474FD6244BAC7300C3D066 /* PostMock.swift in Sources */,
+				41474FD0244BAC7300C3D066 /* MemoryStorageTest.swift in Sources */,
+				41474FCD244BAC7300C3D066 /* DiskStorageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -682,7 +833,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D9C431C227461AF000A6585 /* CodablePersistTests.swift in Sources */,
+				41474FD4244BAC7300C3D066 /* UserDefaultsStorageTest.swift in Sources */,
+				41474FD7244BAC7300C3D066 /* PostMock.swift in Sources */,
+				41474FD1244BAC7300C3D066 /* MemoryStorageTest.swift in Sources */,
+				41474FCE244BAC7300C3D066 /* DiskStorageTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1102,6 +1256,8 @@
 		3D9C42FA2274604A000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/CodablePersistTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1112,6 +1268,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.CodablePersist-iOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1120,6 +1277,8 @@
 		3D9C42FB2274604A000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/CodablePersistTests.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1138,6 +1297,8 @@
 		3D9C430A2274611B000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/CodablePersistTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1148,6 +1309,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.CodablePersist-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -1157,6 +1319,8 @@
 		3D9C430B2274611B000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/CodablePersistTests.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1176,6 +1340,8 @@
 		3D9C431A22746198000A6585 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -1189,6 +1355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alihilal.CodablePersist-macOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -1196,6 +1363,8 @@
 		3D9C431B22746198000A6585 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
