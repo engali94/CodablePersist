@@ -1,0 +1,7 @@
+# CodablePersist document generator jazzy settings
+
+copyright: Copyright 2020 Ali Hilal
+author: Ali A. Hilal
+xcodebuild_arguments: [-target, CodablePersist-iOS]
+clean: true
+output: ./Documentation
