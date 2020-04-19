@@ -71,7 +71,7 @@ Store your awsome `Codable` objects and retreive them with ease. `CodablePersist
 To quickly show you how `CodablePersist` can be useful, consider the following use case:
 
 ```swift
-struct PostFetcher { 
+class PostFetcher { 
     typealias Handler = (Result<Post, Error>) -> Void 
     private let cache = DiskStorage<Post>(storeName: "postStorage")
     
