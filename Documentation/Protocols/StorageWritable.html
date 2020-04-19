@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StorageWritable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/StorageWritable" class="dashAnchor"></a>
+    <a title="StorageWritable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CodablePersist Docs</a> (95% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CodablePersist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        StorageWritable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage.html">DiskStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MemoryStorage.html">MemoryStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsStorage.html">UserDefaultsStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:14CodablePersist13CacheStorableP">CacheStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Identifiable.html">Identifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageReadable.html">StorageReadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageRemovable.html">StorageRemovable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageWritable.html">StorageWritable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:14CodablePersist16ObjectDescriptorV">ObjectDescriptor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>StorageWritable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StorageWritable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol conformed by objects that can be stored in the storage.</p>
+
+<p><strong>Assumptions</strong>:</p>
+
+<ul>
+<li><code>CodablePersist</code> creates objects with the associated keys.</li>
+<li>The objects are stored in unique paths</li>
+<li>Each key represents only one object on that path.</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageWritableP1TQa"></a>
+                    <a name="//apple_ref/swift/Alias/T" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageWritableP1TQa">T</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Identifiable.html">Identifiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageWritableP4saveyy1TQzKF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageWritableP4saveyy1TQzKF">save(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves an objectto the storage, each type conforming to <code><a href="../Protocols/Identifiable.html">Identifiable</a></code>, will have a uniuqe ID
+this  will be  extracted  from that object to to uniuqely identify it. If <code><a href="../Classes/DiskStorage.html">DiskStorage</a></code> is usedit  will
+use that key to  generate a uniqe path to the object in the storage, also in the other storages will
+be used as amunique identifier</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the saving process (e.g. Path incorrect, or Encoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">save</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageWritable.html#/s:14CodablePersist15StorageWritableP1TQa">T</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>object</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The object wanted to be stored..</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageWritableP4saveyySay1TQzGKF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageWritableP4saveyySay1TQzGKF">save(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Saves multiple object in the storage one time.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the saving process (e.g. Path incorrect, or Encoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">save</span><span class="p">(</span><span class="n">_</span> <span class="nv">objects</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageWritable.html#/s:14CodablePersist15StorageWritableP1TQa">T</a></span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>objects</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of objects wanted to be stored..</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 Ali Hilal</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

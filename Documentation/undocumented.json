@@ -1,0 +1,40 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/ali/Desktop/Projects/CodablePersist/Sources/Core/Identifiable.swift",
+      "line": 27,
+      "symbol": "Identifiable.ID",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ali/Desktop/Projects/CodablePersist/Sources/Core/StorageReadable.swift",
+      "line": 26,
+      "symbol": "StorageReadable.T",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ali/Desktop/Projects/CodablePersist/Sources/Core/StorageRemovable.swift",
+      "line": 33,
+      "symbol": "StorageRemovable.T",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ali/Desktop/Projects/CodablePersist/Sources/Core/StorageWritable.swift",
+      "line": 31,
+      "symbol": "StorageWritable.T",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/ali/Desktop/Projects/CodablePersist/Sources/Storage/MemoryStorage.swift",
+      "line": 38,
+      "symbol": "MemoryStorage.init(dateProvider:expiryDate:maxObjectsCount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/ali/Desktop/Projects/CodablePersist"
+}

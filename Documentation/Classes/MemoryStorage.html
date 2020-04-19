@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MemoryStorage Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MemoryStorage" class="dashAnchor"></a>
+    <a title="MemoryStorage Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CodablePersist Docs</a> (95% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CodablePersist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MemoryStorage Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage.html">DiskStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MemoryStorage.html">MemoryStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsStorage.html">UserDefaultsStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:14CodablePersist13CacheStorableP">CacheStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Identifiable.html">Identifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageReadable.html">StorageReadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageRemovable.html">StorageRemovable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageWritable.html">StorageWritable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:14CodablePersist16ObjectDescriptorV">ObjectDescriptor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MemoryStorage</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">MemoryStorage</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Identifiable.html">Identifiable</a></span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Decodable</span><span class="p">,</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Encodable</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">MemoryStorage</span><span class="p">:</span> <span class="kt"><a href="../Protocols.html#/s:14CodablePersist13CacheStorableP">CacheStorable</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Memory Storage utilizes <code>NSCache</code> to cache and retrive data to and from memory it gives a
+convenient  and easy to use way  to cache  any <code>Codable</code>  and  <code><a href="../Protocols/Identifiable.html">Identifiable</a></code> object.
+<strong>WARNING</strong>:  <strong>Don&rsquo;t use it for heavy objects as there will be potential lose of date if any
+memory pressure happens</strong>.
+Consider using <code><a href="../Classes/DiskStorage.html">DiskStorage</a></code> for heavy and long term persistence.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist13MemoryStorageC12dateProvider10expiryDate15maxObjectsCountACyxG10Foundation0H0Vyc_AA06SorageH10DescriptorOSitcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(dateProvider:expiryDate:maxObjectsCount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist13MemoryStorageC12dateProvider10expiryDate15maxObjectsCountACyxG10Foundation0H0Vyc_AA06SorageH10DescriptorOSitcfc">init(dateProvider:<wbr>expiryDate:<wbr>maxObjectsCount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span> <span class="nv">dateProvider</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Date</span> <span class="o">=</span> <span class="kt">Date</span><span class="o">.</span><span class="kd">init</span><span class="p">,</span>
+                      <span class="nv">expiryDate</span><span class="p">:</span> <span class="kt"><a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a></span><span class="p">,</span>
+                      <span class="nv">maxObjectsCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="o">=</span> <span class="mi">50</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/CacheStorable"></a>
+                <a name="//apple_ref/swift/Section/CacheStorable" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/CacheStorable"></a>
+                  <h3 class="section-name"><p>CacheStorable</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageWritableP4saveyy1TQzKF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageWritableP4saveyy1TQzKF">save(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">save</span><span class="p">(</span><span class="n">_</span> <span class="nv">object</span><span class="p">:</span> <span class="kt">T</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageWritableP4saveyySay1TQzGKF"></a>
+                    <a name="//apple_ref/swift/Method/save(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageWritableP4saveyySay1TQzGKF">save(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">save</span><span class="p">(</span><span class="n">_</span> <span class="nv">objects</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP11fetchObject3for1TQzSgAF_2IDQZ_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObject(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP11fetchObject3for1TQzSgAF_2IDQZ_tKF">fetchObject(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchObject</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP12fetchObjects3forSay1TQzGSgSayAF_2IDQZG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObjects(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP12fetchObjects3forSay1TQzGSgSayAF_2IDQZG_tKF">fetchObjects(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchObjects</span><span class="p">(</span><span class="k">for</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP15fetchAllObjects10descendingSay1TQzGSgSb_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAllObjects(descending:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP15fetchAllObjects10descendingSay1TQzGSgSb_tKF">fetchAllObjects(descending:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchAllObjects</span><span class="p">(</span><span class="nv">descending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP18fetchObjectsStored6inLastSay1TQzGAA20SorageDateDescriptorO_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObjectsStored(inLast:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP18fetchObjectsStored6inLastSay1TQzGAA20SorageDateDescriptorO_tKF">fetchObjectsStored(inLast:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchObjectsStored</span><span class="p">(</span><span class="n">inLast</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP18fetchObjectsStored6beforeSay1TQzGAA20SorageDateDescriptorO_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObjectsStored(before:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP18fetchObjectsStored6beforeSay1TQzGAA20SorageDateDescriptorO_tKF">fetchObjectsStored(before:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">fetchObjectsStored</span><span class="p">(</span><span class="n">before</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">T</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadablePy1TQzSgAD_2IDQZcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadablePy1TQzSgAD_2IDQZcip">subscript(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP8containsySb1T_2IDQZF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP8containsySb1T_2IDQZF">contains(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP9isExpired3forSb1T_2IDQZ_tF"></a>
+                    <a name="//apple_ref/swift/Method/isExpired(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP9isExpired3forSb1T_2IDQZ_tF">isExpired(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isExpired</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP12objectsCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/objectsCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP12objectsCountSivp">objectsCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">objectsCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP12deleteObject6forKeyy1T_2IDQZ_tKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteObject(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP12deleteObject6forKeyy1T_2IDQZ_tKF">deleteObject(forKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteObject</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP13deleteObjects7forKeysySay1T_2IDQZG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteObjects(forKeys:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP13deleteObjects7forKeysySay1T_2IDQZG_tKF">deleteObjects(forKeys:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteObjects</span><span class="p">(</span><span class="n">forKeys</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">T</span><span class="o">.</span><span class="kt">ID</span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP9deleteAllyyKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteAll()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP9deleteAllyyKF">deleteAll()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteAll</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP13deleteExpiredyyF"></a>
+                    <a name="//apple_ref/swift/Method/deleteExpired()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP13deleteExpiredyyF">deleteExpired()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">deleteExpired</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 Ali Hilal</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

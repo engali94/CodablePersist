@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StorageReadable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/StorageReadable" class="dashAnchor"></a>
+    <a title="StorageReadable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CodablePersist Docs</a> (95% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CodablePersist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        StorageReadable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage.html">DiskStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MemoryStorage.html">MemoryStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsStorage.html">UserDefaultsStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:14CodablePersist13CacheStorableP">CacheStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Identifiable.html">Identifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageReadable.html">StorageReadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageRemovable.html">StorageRemovable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageWritable.html">StorageWritable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:14CodablePersist16ObjectDescriptorV">ObjectDescriptor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>StorageReadable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StorageReadable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol conformed by objects that can be read from the storage.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP1TQa"></a>
+                    <a name="//apple_ref/swift/Alias/T" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP1TQa">T</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Identifiable.html">Identifiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP11fetchObject3for1TQzSgAF_2IDQZ_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObject(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP11fetchObject3for1TQzSgAF_2IDQZ_tKF">fetchObject(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrives single object from the storage.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the reading process (e.g. Missing object, or Decoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchObject</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key that uniqly identifies that object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The object fetched from the specified key.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP12fetchObjects3forSay1TQzGSgSayAF_2IDQZG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObjects(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP12fetchObjects3forSay1TQzGSgSayAF_2IDQZG_tKF">fetchObjects(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrives multiple objects from the storage.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the reading process (e.g. Missing object, or Decoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchObjects</span><span class="p">(</span><span class="k">for</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of keys that uniqly identifies the stored objects.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of objects fetched from the specified keys.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP15fetchAllObjects10descendingSay1TQzGSgSb_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchAllObjects(descending:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP15fetchAllObjects10descendingSay1TQzGSgSb_tKF">fetchAllObjects(descending:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrives all valid (not expired) objects from the storage.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the reading process (e.g. Missing object, or Decoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchAllObjects</span><span class="p">(</span><span class="nv">descending</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>descending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The order of the fetched results, deafults to <code>true</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of all valid (not expired) objects fetched from the storage.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP18fetchObjectsStored6inLastSay1TQzGAA20SorageDateDescriptorO_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObjectsStored(inLast:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP18fetchObjectsStored6inLastSay1TQzGAA20SorageDateDescriptorO_tKF">fetchObjectsStored(inLast:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrives a chunk of objects stored <em>after</em> a specific date. i.e in the last ten minutes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchObjectsStored</span><span class="p">(</span><span class="n">inLast</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An interval of time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of objects fetched from the storage stored after the specified period.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP18fetchObjectsStored6beforeSay1TQzGAA20SorageDateDescriptorO_tKF"></a>
+                    <a name="//apple_ref/swift/Method/fetchObjectsStored(before:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP18fetchObjectsStored6beforeSay1TQzGAA20SorageDateDescriptorO_tKF">fetchObjectsStored(before:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrives a chunk of objects stored <em>before</em> a specific date. i.e before the last ten minutes.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the reading process (e.g. Missing object, or Decoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchObjectsStored</span><span class="p">(</span><span class="n">before</span> <span class="nv">interval</span><span class="p">:</span> <span class="kt"><a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>interval</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An interval of time.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Array of objects fetched from the storage stored after the specified period.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP8containsySb1T_2IDQZF"></a>
+                    <a name="//apple_ref/swift/Method/contains(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP8containsySb1T_2IDQZF">contains(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks if the storage contains an object with the specifed key.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the reading process (e.g. Missing object, or Decoding falied).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>object&rsquo;s uniuqe identifer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Boolean value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP9isExpired3forSb1T_2IDQZ_tF"></a>
+                    <a name="//apple_ref/swift/Method/isExpired(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP9isExpired3forSb1T_2IDQZ_tF">isExpired(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Checks object associated with that key has expired or not.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">isExpired</span><span class="p">(</span><span class="k">for</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>object&rsquo;s uniuqe identifer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Boolean value.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadableP12objectsCountSivp"></a>
+                    <a name="//apple_ref/swift/Property/objectsCount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadableP12objectsCountSivp">objectsCount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gives the count of all the objects in that store.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">objectsCount</span><span class="p">:</span> <span class="kt">Int</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Objects count in the store.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist15StorageReadablePy1TQzSgAD_2IDQZcip"></a>
+                    <a name="//apple_ref/swift/Method/subscript(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist15StorageReadablePy1TQzSgAD_2IDQZcip">subscript(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrives a single value from th store throw subscript ([])</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">subscript</span><span class="p">(</span><span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Protocols/StorageReadable.html#/s:14CodablePersist15StorageReadableP1TQa">T</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>optinal single object.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 Ali Hilal</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

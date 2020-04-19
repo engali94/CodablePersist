@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StorageRemovable Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/StorageRemovable" class="dashAnchor"></a>
+    <a title="StorageRemovable Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">CodablePersist Docs</a> (95% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">CodablePersist Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        StorageRemovable Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DiskStorage.html">DiskStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MemoryStorage.html">MemoryStorage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserDefaultsStorage.html">UserDefaultsStorage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SorageDateDescriptor.html">SorageDateDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols.html#/s:14CodablePersist13CacheStorableP">CacheStorable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Identifiable.html">Identifiable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageReadable.html">StorageReadable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageRemovable.html">StorageRemovable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/StorageWritable.html">StorageWritable</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:14CodablePersist16ObjectDescriptorV">ObjectDescriptor</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>StorageRemovable</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">StorageRemovable</span></code></pre>
+
+                </div>
+              </div>
+            <p>A protocol conformed by objects that can be removed from the storage.</p>
+
+<p><strong>Assumptions</strong>:</p>
+
+<ul>
+<li><code>CodablePersist</code> creates objects with the associated keys.</li>
+<li>The objects are stored in unique paths</li>
+<li>Each kay represents only one object on that path.</li>
+<li>Each object can be removed if its unique identifer is known or its life cycle ended (i.e. expired).</li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP1TQa"></a>
+                    <a name="//apple_ref/swift/Alias/T" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP1TQa">T</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">associatedtype</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/Identifiable.html">Identifiable</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP12deleteObject6forKeyy1T_2IDQZ_tKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteObject(forKey:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP12deleteObject6forKeyy1T_2IDQZ_tKF">deleteObject(forKey:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete an object related to the specified key.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the deleting process (e.g. Missing object).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteObject</span><span class="p">(</span><span class="n">forKey</span> <span class="nv">key</span><span class="p">:</span> <span class="kt"><a href="../Protocols/StorageRemovable.html#/s:14CodablePersist16StorageRemovableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>key</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The unique key for that object.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP13deleteObjects7forKeysySay1T_2IDQZG_tKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteObjects(forKeys:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP13deleteObjects7forKeysySay1T_2IDQZG_tKF">deleteObjects(forKeys:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete  objects related to the specified keys.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the deleting process (e.g. Missing object(s)).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteObjects</span><span class="p">(</span><span class="n">forKeys</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Protocols/StorageRemovable.html#/s:14CodablePersist16StorageRemovableP1TQa">T</a></span><span class="o">.</span><span class="kt">ID</span><span class="p">])</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>keys</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of unique keys for objects wanted to be deleted.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP9deleteAllyyKF"></a>
+                    <a name="//apple_ref/swift/Method/deleteAll()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP9deleteAllyyKF">deleteAll()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete  all objects stored in the storage.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error encountered during the deleting process (e.g. Missing object(s)).
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteAll</span><span class="p">()</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:14CodablePersist16StorageRemovableP13deleteExpiredyyF"></a>
+                    <a name="//apple_ref/swift/Method/deleteExpired()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:14CodablePersist16StorageRemovableP13deleteExpiredyyF">deleteExpired()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Delete  all objects that has expired.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteExpired</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2020 Ali Hilal</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
