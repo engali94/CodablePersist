@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name                      = "CodablePersist"
-  s.version                   = "1.0.0"
-  s.summary                   = "CodablePersist"
+  s.version                   = "0.1"
+  s.summary                   = "Store and Cache Anything Codable"
   s.homepage                  = "https://github.com/engali94/CodablePersist.git"
   s.license                   = { :type => "MIT", :file => "LICENSE" }
   s.author                    = { "Ali A, Hilal" => "ali94_200970@yahoo.com" }
-  s.source                    = { :git => "https://github.com/engali94/CodablePersist.git.git", :tag => s.version.to_s }
+  s.source                    = { :git => "https://github.com/engali94/CodablePersist.git", :tag => s.version.to_s }
   s.swift_version             = "5.1"
   s.ios.deployment_target     = "8.0"
   s.tvos.deployment_target    = "9.0"
