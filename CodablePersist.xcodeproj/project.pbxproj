@@ -284,8 +284,8 @@
 			children = (
 				41474FC7244BAC7300C3D066 /* DiskStorageTest.swift */,
 				41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */,
-				41474FCA244BAC7300C3D066 /* Mock */,
 				41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */,
+				41474FCA244BAC7300C3D066 /* Mock */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
