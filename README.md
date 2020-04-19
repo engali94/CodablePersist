@@ -72,19 +72,19 @@ To quickly show you how `CodablePersist` can be useful, consider the following u
 
 ```swift
 struct PostFetcher { 
-    typealias Handler = (Result<Article, Error>) -> Void 
+    typealias Handler = (Result<Post, Error>) -> Void 
     private let cache = Cache<Article.ID, Article>()
     
     func fetchPost(withID id: Post.ID, then handler: @escaping  Handler) {
     // check if the post is cached or not
-     if let cached = cache[id] { return  handler(.success(cached)) } 
-     // if not cached fetch it from the backend
-     performFetching { [weak self] result in 
-     // load post and cache it
-     let post = try? result.get() post.map { self?.cache[id] = $0 }
-     //then return the result
-      handler(result) 
-      } 
+    if let cached = cache[id] { return  handler(.success(cached)) } 
+    // if not cached fetch it from the backend
+    performFetching { [weak self] result in 
+        // load post and cache it
+        let post = try? result.get() post.map { self?.cache[id] = $0 }
+        //then return the result
+        handler(result) 
+        } 
     } 
 }
 ```
