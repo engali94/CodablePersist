@@ -84,8 +84,7 @@ public class UserDefaultsStorage<T: Identifiable & Codable> {
 extension UserDefaultsStorage: CacheStorable {
     
     public func save(_ object: T) throws {
-        let creationDate = dateProvider()
-        let entry = ObjectDescriptor<T>(object: object, expiryDate: expiryDate.expireDate, creationDate: creationDate)
+        let entry = ObjectDescriptor<T>(object: object, expiryDate: expiryDate.expireDate, creationDate: dateProvider())
         let data = try encoder.encode(entry)
         let key = extractKey(from: object)
         defaultsStore.set(data, forKey: key )
@@ -222,7 +221,6 @@ private extension UserDefaultsStorage {
                 try deleteObject(forKey: entry.key)
                 return nil
             }
-            
         }
     }
     
