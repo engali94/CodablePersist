@@ -72,6 +72,7 @@
 		41474FD5244BAC7300C3D066 /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FCB244BAC7300C3D066 /* PostMock.swift */; };
 		41474FD6244BAC7300C3D066 /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FCB244BAC7300C3D066 /* PostMock.swift */; };
 		41474FD7244BAC7300C3D066 /* PostMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41474FCB244BAC7300C3D066 /* PostMock.swift */; };
+		41C528FA2454E2B000A23635 /* CacheBacked.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C528F92454E2B000A23635 /* CacheBacked.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		41474FC8244BAC7300C3D066 /* MemoryStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemoryStorageTest.swift; sourceTree = "<group>"; };
 		41474FC9244BAC7300C3D066 /* UserDefaultsStorageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsStorageTest.swift; sourceTree = "<group>"; };
 		41474FCB244BAC7300C3D066 /* PostMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostMock.swift; sourceTree = "<group>"; };
+		41C528F92454E2B000A23635 /* CacheBacked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheBacked.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +331,7 @@
 				41474F95244BAC5600C3D066 /* CacheStorable.swift */,
 				41474F96244BAC5600C3D066 /* Identifiable.swift */,
 				41474F97244BAC5600C3D066 /* StorageReadable.swift */,
+				41C528F92454E2B000A23635 /* CacheBacked.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -749,6 +752,7 @@
 				41474FB7244BAC5600C3D066 /* Identifiable.swift in Sources */,
 				41474F9B244BAC5600C3D066 /* MemoryStorage.swift in Sources */,
 				41474FBB244BAC5600C3D066 /* StorageReadable.swift in Sources */,
+				41C528FA2454E2B000A23635 /* CacheBacked.swift in Sources */,
 				41474FA7244BAC5600C3D066 /* ObjectDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
