@@ -49,7 +49,7 @@
 
 <p align="center">
 
-Store your awsome `Codable` objects and retreive them with ease. `CodablePersist` gives you a convenient way store your objects in disk, UserDefaluts and memory and manage them easly.
+Store your awsome `Codable` objects and retrieve them with ease. `CodablePersist` gives you a convenient way to store your objects in a disk, UserDefaluts, and memory and manage them easily.
 
 </p>
 
